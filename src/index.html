@@ -63,28 +63,80 @@
                 </aside>
                 <main>
                     <section class="slider">
-                        <div class="slider__img">
-                            <div class="slider__img-title">
-                                <h1>Share your Food Sence</h1>
+                        <!--Управление слайдером-->
+                        <div class="slider-counter">
+                            <div class="slider-prev">
+                                <img src="icons/ArrowLeft.svg" alt="prev">
                             </div>
-                            <div class="slider__img-descr">
-                                <p>Submit yout favorite recipes, become a contributor, or get interviewed.</p>
+                            <div class="slider-next">
+                                <img src="icons/ArrowRight.svg" alt="next">
                             </div>
                         </div>
+                        <!--^^Управление слайдером^^-->
+                        <!--Слайды-->
+                        <div class="slider-items">
+                            <div class="slider-inner">
+                                <div class="slider-item">
+                                    <div class="slider__img1">
+                                        <div class="slider__img1-title">
+                                            <h1>Share your Food Sence</h1>
+                                        </div>
+                                        <div class="slider__img1-descr">
+                                            <p>Submit yout favorite recipes, become a contributor, or get interviewed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="slider__img2">
+                                        <div class="slider__img2-title">
+                                            <h1>Share your Food Sence</h1>
+                                        </div>
+                                        <div class="slider__img2-descr">
+                                            <p>Submit yout favorite recipes, become a contributor, or get interviewed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="slider__img3">
+                                        <div class="slider__img3-title">
+                                            <h1>Share your Food Sence</h1>
+                                        </div>
+                                        <div class="slider__img3-descr">
+                                            <p>Submit yout favorite recipes, become a contributor, or get interviewed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="slider__img4">
+                                        <div class="slider__img4-title">
+                                            <h1>Share your Food Sence</h1>
+                                        </div>
+                                        <div class="slider__img4-descr">
+                                            <p>Submit yout favorite recipes, become a contributor, or get interviewed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--^^Слайды^^-->
                         <div class="tabs">
-                            <div class="tabs__item">
+                            <div class="tabs__item" slide="1">
                                 <div class="tabs__item-title">Tastemakers</div>
                                 <div class="tabs__item-descr">Feast your eyes & get reciepes!</div>
                             </div>
-                            <div class="tabs__item">
+                            <div class="tabs__item" slide="2">
                                 <div class="tabs__item-title">Blog</div>
                                 <div class="tabs__item-descr">News, how-tos, stories, and more</div>
                             </div>
-                            <div class="tabs__item">
+                            <div class="tabs__item" slide="3">
                                 <div class="tabs__item-title">The A-List</div>
                                 <div class="tabs__item-descr">Handpicked, absolute favorites</div>
                             </div>
-                            <div class="tabs__item">
+                            <div class="tabs__item" slide="4">
                                 <div class="tabs__item-title">Contribute</div>
                                 <div class="tabs__item-descr">We want to hear from you!</div>
                             </div>
@@ -198,6 +250,13 @@
             </footer>
         </div>
     </div>
+
+    <script type="text/javascript">
+        {
+            if (screen.width <= 1176) document.write('<script type="text/javascript" src="js/mobile.js" ></sc' + 'ript>');
+            if (screen.width > 1176) document.write('<script type="text/javascript" src="js/script.js" ></sc' + 'ript>');
+        }
+    </script>
 </body>
 
 </html>
